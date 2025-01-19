@@ -1,12 +1,13 @@
 import numpy as np
 
-A=np.array([[1,-2,1],
-            [0,2,-8],
-            [-4,5,9]  
+A=np.array([[2,3,-1],
+            [4,-1,2],
+            [-1,2,3]  
             ])
 
-b=np.array([0,8,-9])
+b=np.array([5,6,4])
 
 solucion = np.linalg.solve(A,b)
 
 print(solucion)
+# [29. 16.  3.]

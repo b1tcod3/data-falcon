@@ -1,6 +1,7 @@
 /recursos
 /codigo/practical-statistics-for-data-scientists-master
 /software/.*
+.env
 
 
 
