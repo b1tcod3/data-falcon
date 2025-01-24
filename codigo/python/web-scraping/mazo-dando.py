@@ -17,8 +17,6 @@ driver.get(url)
 
 contenedores = driver.find_elements(By.CLASS_NAME, 'contenedor4')
 
-
-
 driver.close()
 driver.quit()
 
