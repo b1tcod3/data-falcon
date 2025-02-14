@@ -13,4 +13,18 @@ soup = BeautifulSoup(html_obtenido, 'html.parser')
 
 divs = soup.find_all('div', class_='detail-box')
 
-print(divs)
+products = []
+precios = []
+
+for div in divs:
+    if (div.h6 is not None) and ('Patineta' in div.h5.text):
+        
+        product = div.h5.get_text(strip=True)
+        precio = div.h6.get_text(strip=True).replace('$', '')
+        
+        # filtras los productos por un precio
+        products.append(product)
+        precios.append(precio)
+
+print(products)
+print(precios)
