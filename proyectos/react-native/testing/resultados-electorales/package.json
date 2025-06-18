@@ -1,0 +1,30 @@
+{
+  "name": "resultados-electorales",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-native-picker/picker": "2.11.0",
+    "expo": "~53.0.7",
+    "expo-asset": "^11.1.5",
+    "expo-constants": "^17.1.5",
+    "expo-file-system": "^18.1.9",
+    "expo-status-bar": "~2.2.3",
+    "prop-types": "^15.8.1",
+    "react": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-csv": "^0.2.0",
+    "react-native-picker-select": "^9.3.1",
+    "react-native-svg": "15.11.2",
+    "victory-native": "^36.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

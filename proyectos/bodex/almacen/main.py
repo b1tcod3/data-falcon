@@ -1,32 +1,10 @@
-from PyQt5.QtWidgets import (QApplication, QMainWindow)
-
-from connect_db import DatabaseConnection
-
-class StockManagement(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.db = DatabaseConnection()
-        self.initUI()
-
-    def initUI(self):
-        self.setWindowTitle('Gestión de Almacén')
-        self.setGeometry(100, 100, 800, 600)
-
-        # Create widgets and layout here
-        # ...
-
-    def load_data(self):
-        # Load data from the database
-        pass
-
-    def save_data(self):
-        # Save data to the database
-        pass
-
-if __name__ == '__main__':
-    import sys
-
+import sys
+from PySide6.QtWidgets import QApplication
+from supplier_management import SupplierManagement
+   
+if __name__ == "__main__": 
+    print(__name__)
     app = QApplication(sys.argv)
-    window = StockManagement()
+    window = SupplierManagement()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

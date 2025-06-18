@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "assetBundlePatterns": [
+      "/**/*"
+    ],
+    "packageOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "ts",
+        "tsx",
+        "json",
+        "cjs",
+        "mjs",
+        "csv"
+      ]
+    },
+    "name": "resultados-electorales",
+    "slug": "resultados-electorales",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_INTERNAL_STORAGE"
+      ],
+      "package": "com.b1tcod3.resultadoselectorales"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f802109a-3479-4471-9185-af274a983701"
+      }
+    }
+  }
+}
