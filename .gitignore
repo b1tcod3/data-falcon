@@ -3,6 +3,4 @@
 /software/.*
 /codigo/python/web-scraping/*
 .env
-
-
-
+*.zip
