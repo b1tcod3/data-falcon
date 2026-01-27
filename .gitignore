@@ -84,3 +84,16 @@ yarn-error.log*
 *.ubyte
 Changelog
 *.spec
+
+# Rust
+target/
+courses/rust/**/target/
+courses/rust/**/**/target/
+courses/rust/*/target/
+
+# Cargo
+Cargo.lock
+
+# Tauri
+src-tauri/target/
+src-tauri/Cargo.lock
