@@ -73,3 +73,14 @@ yarn-error.log*
 *.jpg
 *.jpeg
 *.gif
+
+# Archivos de datos
+*.db
+*.csv
+*.xls
+*.xlsx
+*.dump
+*.gz
+*.ubyte
+Changelog
+*.spec
