@@ -23,7 +23,7 @@
 /// # Complejidad
 /// * Tiempo: O(n^2) en el peor caso, O(n) en el mejor caso (cuando la lista ya está ordenada).
 /// * Espacio: O(1)
-fn bubble_sort<T: PartialOrd>(lista: &mut [T]) {
+fn pub bubble_sort<T: PartialOrd>(lista: &mut [T]) {
     let n = lista.len();
 
     for i in 0..n {
