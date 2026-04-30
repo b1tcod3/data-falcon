@@ -26,25 +26,56 @@
 pub fn bubble_sort<T: PartialOrd>(lista: &mut [T]) {
     let n = lista.len();
 
+    // bucle externo
     for i in 0..n {
         // en cada pasada, el elemento más grande se mueve al final
         let mut intercambiado = false;
+        // bucle interno
         for j in 0..(n - i - 1) {
+            // en cada pasada i, el elemento más grande se mueve al final, por lo que no es
+            // necesario comparar los últimos i elementos
             if lista[j] > lista[j + 1] {
                 // intercambiamos los elementos usando el método swap de rust
                 lista.swap(j, j + 1);
                 intercambiado = true;
             }
         }
+        // si no se realizó ningún intercambio, la lista ya está ordenada
         if !intercambiado {
             break; // la lista ya está ordenada
         }
     }
 }
 
-fn main() {
-    let mut numeros = vec![64, 34, 25, 12, 22, 11, 90];
-    println!("Lista original: {:?}", numeros);
-    bubble_sort(&mut numeros);
-    println!("Lista ordenada: {:?}", numeros);
+//fn main() {
+//    let mut numeros = vec![64, 34, 25, 12, 22, 11, 90];
+//    println!("Lista original: {:?}", numeros);
+//    bubble_sort(&mut numeros);
+//    println!("Lista ordenada: {:?}", numeros);
+//}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_ordenar_lista_desordenada() {
+        let mut numeros = vec![64, 34, 25, 12, 22, 11, 90];
+        bubble_sort(&mut numeros);
+        assert_eq!(numeros, vec![11, 12, 22, 25, 34, 64, 90]);
+    }
+
+    #[test]
+    fn test_list_ya_ordenada() {
+        let mut numeros = vec![1, 2, 3, 4, 5];
+        bubble_sort(&mut numeros);
+        assert_eq!(numeros, vec![1, 2, 3, 4, 5]);
+    }
+
+    #[test]
+    fn test_lista_vacia() {
+        let mut numeros: Vec<i32> = vec![];
+        bubble_sort(&mut numeros);
+        assert_eq!(numeros, vec![]);
+    }
 }
