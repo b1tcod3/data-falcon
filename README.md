@@ -1,6 +1,12 @@
-# Repositorio de Investigación en Ciencia de Datos e IA
+# Repositorio de Investigación en Programación General, Ciencia de Datos e IA
 
-Este repositorio contiene una colección de código, tutoriales, cursos y proyectos relacionados con la ciencia de datos, inteligencia artificial, estadísticas y metodologías relacionadas. Sirve como recurso de investigación y aprendizaje, organizado por metodología y lenguaje de programación.
+Este repositorio contiene una colección de código, tutoriales, cursos y proyectos relacionados con programación general, ciencia de datos, inteligencia artificial, estadísticas y metodologías relacionadas. Sirve como recurso de investigación y aprendizaje, organizado por área y lenguaje de programación.
+
+## Áreas del Repositorio
+
+- **Programación General**: Manejo de archivos, Interfaces gráficas, SQL, Excel
+- **Ciencia de Datos**: Estadísticas, Probabilidad, Predicción, Manipulación de datos, Visualización, Álgebra lineal, Aprendizaje automático
+- **Inteligencia Artificial**: Clasificación binaria, Regresión polinomial, Redes neuronales
 
 ## Estructura del Repositorio
 
