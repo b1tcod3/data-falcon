@@ -13,8 +13,7 @@ data-falcon/
 │   ├── assets/              # Imágenes y otros recursos
 │   ├── nutri.csv            # Conjunto de datos de nutrición
 │   ├── FashionMNIST/        # Conjunto Fashion MNIST
-│   ├── MNIST/               # Conjunto MNIST
-│   └── ...
+│   └── MNIST/               # Conjunto MNIST
 ├── code/                    # Código fuente organizado por metodología
 │   ├── ai/                  # Inteligencia Artificial
 │   │   ├── python/
@@ -56,45 +55,119 @@ data-falcon/
 │   ├── mapa/                # Proyectos de mapeo geográfico
 │   ├── juegos/              # Juegos y simulaciones
 │   └── react-native/        # Proyectos de apps móviles
-└── software/                # Herramientas de software (actualmente vacío)
+└── software/                # Herramientas de software
 ```
 
-## Categorías de Contenido
+## Contenido de Programación
 
-### Inteligencia Artificial (IA)
-- Implementaciones en PyTorch para clasificación binaria
-- Regresión polinomial
-- Redes neuronales
+### Programación General
 
-### Estadísticas
-- Análisis de correlación
-- Regresión (lineal, múltiple)
+**Manejo de Archivos (Python)**
+- Lectura y escritura de archivos CSV, TXT
+- Manejo de errores
+
+**Interfaces Gráficas (Python)**
+- PySide6
+
+**SQL (Python)**
+- Operaciones de base de datos
+
+**Excel (Python)**
+- Automatización con openpyxl
+
+---
+
+### Ciencia de Datos
+
+**Estadísticas (Python y R)**
+
+*Medidas de Tendencia Central y Dispersión*
+- Media, mediana, moda
+- Varianza y desviación estándar
+- Rango e rango intercuartil
+- Cuantiles
+
+*Distribuciones*
+- Distribución normal
+- Distribución binomial
+- Distribución acumulada
+- Transformación inversa normal CDF
+
+*Análisis de Correlación*
+- Correlación simple y avanzada
+- Covarianza
+- Diagramas de correlación
+
+*Regresión*
+- Regresión lineal simple y múltiple
+- Valores ajustados y residuales
+- Cálculo de RMSE
+
+*Muestreo y Bootstrap*
+- Distribuciones normales
+- Histogramas
+- Remuestreo (bootstrap)
+- Permutaciones
+- Remuestreo con media, boxplot
+
+*Gráficos Estadísticos*
+- Histogramas
+- Diagramas de cajas (boxplot)
+- Diagramas de violín
+- Diagramas de dispersión
+- Gráficos hexagonales
+- Facetas
+- Barplots
+- Tablas de frecuencias
+
+*Análisis Avanzado*
 - Pruebas de hipótesis
-- Agrupamiento
-- Series temporales (ARIMA)
+- Poder estadístico
+- Análisis de supervivencia
 - Modelos de efectos mixtos
+- Agrupamiento jerárquico
+- Series temporales (ARIMA)
+- Validación cruzada e hiperparámetros
+- Tablas de contingencia y divergencias
 
-### Visualización de Datos
-- Gráficos con Matplotlib (barras, dispersión, histogramas, etc.)
-- Visualizaciones con Seaborn
+*Inferencia Estadística*
+- Inferencia binomial
+
+**Probabilidad**
+- Simulación de dados
+- Distribuciones bivariante normal
+- Distribuciones acumuladas
+
+**Predicción**
+- Predicción de partidos por fecha de liga
+- Modelos predictivos
+
+**Manipulación de Datos (Python)**
+- Operaciones con Pandas
+- Lectura y escritura de archivos
+- Manejo de errores
+- Limpieza y transformación de datos
+
+**Visualización de Datos (Python)**
+- Matplotlib (barras, dispersión, histogramas)
+- Seaborn
 - Gráficos 3D
 
-### Aprendizaje Automático
-- Algoritmos de clasificación y regresión
+**Álgebra Lineal (Python)**
+- Operaciones matriciales
+
+**Aprendizaje Automático (Python)**
+- Clasificación y regresión
 - Ingeniería de características
 - Evaluación de modelos
 
-### Manipulación de Datos
-- Operaciones con Pandas
-- Limpieza y transformación de datos
-- Tablas cruzadas y resúmenes
+---
 
-### Otras Metodologías
-- Operaciones de álgebra lineal
-- Manejo de archivos
-- Desarrollo de GUI con PySide6
-- Interacciones con bases de datos SQL
-- Automatización de Excel
+### Inteligencia Artificial
+
+- Clasificación binaria con PyTorch
+- Regresión polinomial
+- Redes neuronales
 
 ## Conjuntos de Datos
 
