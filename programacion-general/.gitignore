@@ -1,4 +1,4 @@
-# Directorios y archivos específicos del proyecto
+# Directorios y archivos especificos del proyecto
 /recursos
 /SALA
 /codigo/practical-statistics-for-data-scientists-master
@@ -10,7 +10,7 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
+*py.class
 *.so
 .Python
 build/
@@ -43,7 +43,6 @@ MANIFEST
 *.swp
 *.swo
 *~
-
 # OS
 .DS_Store
 .DS_Store?
@@ -68,7 +67,7 @@ yarn-error.log*
 *.h5
 *.pkl
 
-# Imágenes temporales
+# Imagenes temporales
 *.png
 *.jpg
 *.jpeg
@@ -82,14 +81,14 @@ yarn-error.log*
 *.dump
 *.gz
 *.ubyte
+
+# Changelog
 Changelog
-*.spec
 
 # Rust
 target/
-courses/rust/**/target/
-courses/rust/**/**/target/
-courses/rust/*/target/
+courses/rust//target/
+courses/rust///target/
 
 # Cargo
 Cargo.lock
@@ -97,3 +96,24 @@ Cargo.lock
 # Tauri
 src-tauri/target/
 src-tauri/Cargo.lock
+
+# Ignorar todos los PDF
+*.pdf
+
+# Ignorar datasets grandes
+**/data/
+**/raw/
+**/mnist/
+**/fashionmnist/
+
+# Ignorar node_modules recursivamente
+**/node_modules/
+
+# Ignorar archivos target de Rust
+**/target/
+
+# Ignorar archivos DLL
+*.dll
+
+# Ignorar archivos dump
+*.dump
