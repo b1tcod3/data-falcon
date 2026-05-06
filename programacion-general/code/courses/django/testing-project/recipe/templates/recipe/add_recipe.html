@@ -1,0 +1,22 @@
+{% extends 'recipe/base.html' %}
+
+{% block title %}Add New Recipe{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="mb-0">Add New Recipe</h1>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">Save Recipe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

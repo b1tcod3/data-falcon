@@ -1,1 +1,0 @@
-rd_("kbubble_sort")

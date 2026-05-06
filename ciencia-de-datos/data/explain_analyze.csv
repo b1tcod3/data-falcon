@@ -1,0 +1,16 @@
+EXPLAIN ANALYZE
+WITH Calculo_Total AS (
+    SELECT
+        fecha_transaccion,
+        producto,
+        (monto * cantidad) AS total_venta_por_item
+    FROM
+        ventas
+)
+SELECT
+    fecha_transaccion,
+    AVG(total_venta_por_item) AS promedio_venta_diaria
+FROM
+    Calculo_Total
+GROUP BY
+    fecha_transaccion;
