@@ -23,6 +23,7 @@ Lecciones:
 1. [¿Qué es DDD?](./data-driven-decision-making/01-que-es-ddd.md)
 2. [Los Dos Tipos de Problemas de Negocio](./data-driven-decision-making/02-los-dos-tipos-de-problemas-de-negocio.md)
 3. [La Revolución de las Decisiones Automatizadas](./data-driven-decision-making/03-la-revolucion-de-las-decisiones-automatizadas.md)
+4. [El Impacto del Big Data en la Productividad](./data-driven-decision-making/04-impacto-del-big-data-en-la-productividad.md)
 
 ## Orden sugerido
 

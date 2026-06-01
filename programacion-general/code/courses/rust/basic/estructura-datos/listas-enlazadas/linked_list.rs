@@ -136,6 +136,32 @@ impl LinkedList {
         current.as_ref().map(|node| node.data.as_str())
     }
 
+    /// Busca un valor en la lista y retorna su índice
+    ///
+    /// # Parámetros
+    /// * `value` - El valor a buscar
+    ///
+    /// # Devuelve
+    /// * `Some(usize)` - el índice de la primera ocurrencia del valor
+    /// * `None` - si el valor no se encuentra en la lista
+    ///
+    /// # Complejidad
+    /// O(n) - requiere recorrer la lista hasta encontrar el valor
+    fn index_of(&self, value: &str) -> Option<usize> {
+        let mut current = &self.first_node;
+        let mut current_index = 0;
+
+        while let Some(node) = current {
+            if node.data == value {
+                return Some(current_index);
+            }
+            current = &node.next;
+            current_index += 1;
+        }
+
+        None
+    }
+
     /// Retorna una representación como Vec de todos los elementos
     ///
     /// # Complejidad
@@ -313,6 +339,27 @@ mod tests {
         list.push_back("final");
 
         assert_eq!(list.to_vec(), vec!["inicio", "medio", "final"]);
+    }
+
+    #[test]
+    fn test_index_of() {
+        let mut list = LinkedList::new();
+        list.push_back("once");
+        list.push_back("upon");
+        list.push_back("a");
+        list.push_back("time");
+
+        assert_eq!(list.index_of("once"), Some(0));
+        assert_eq!(list.index_of("upon"), Some(1));
+        assert_eq!(list.index_of("a"), Some(2));
+        assert_eq!(list.index_of("time"), Some(3));
+        assert_eq!(list.index_of("never"), None);
+    }
+
+    #[test]
+    fn test_index_of_lista_vacia() {
+        let list: LinkedList = LinkedList::new();
+        assert_eq!(list.index_of("anything"), None);
     }
 
     #[test]
