@@ -10,11 +10,12 @@ Curso de introducción a la Ciencia de Datos. Cubre los fundamentos: qué es la 
 Lecciones:
 1. [¿Qué es la Ciencia de Datos?](./intro-ciencia-datos/01-que-es-la-ciencia-de-datos.md)
 2. [Ciencia de Datos vs. Minería de Datos](./intro-ciencia-datos/02-ciencia-de-datos-vs-mineria-de-datos.md)
-3. [El Proceso de Ciencia de Datos](./intro-ciencia-datos/03-el-proceso-de-ciencia-de-datos.md)
-4. [Tipos de Datos](./intro-ciencia-datos/04-tipos-de-datos.md)
-5. [Estadística Descriptiva Fundamental](./intro-ciencia-datos/05-estadistica-descriptiva-fundamental.md)
-6. [Visualización y Comunicación de Datos](./intro-ciencia-datos/06-visualizacion-y-comunicacion.md)
-7. [Herramientas del Científico de Datos](./intro-ciencia-datos/07-herramientas-del-cientifico-de-datos.md)
+3. [Las 9 Tareas Canónicas de la Minería de Datos](./intro-ciencia-datos/03-tareas-canonicas-de-mineria-de-datos.md)
+4. [El Proceso de Ciencia de Datos](./intro-ciencia-datos/04-el-proceso-de-ciencia-de-datos.md)
+5. [Tipos de Datos](./intro-ciencia-datos/05-tipos-de-datos.md)
+6. [Estadística Descriptiva Fundamental](./intro-ciencia-datos/06-estadistica-descriptiva-fundamental.md)
+7. [Visualización y Comunicación de Datos](./intro-ciencia-datos/07-visualizacion-y-comunicacion.md)
+8. [Herramientas del Científico de Datos](./intro-ciencia-datos/08-herramientas-del-cientifico-de-datos.md)
 
 ### [data-driven-decision-making](./data-driven-decision-making/)
 Curso sobre Toma de Decisiones Basada en Datos (DDD). Explora cómo las organizaciones utilizan datos para guiar decisiones estratégicas y operativas, los tipos de problemas de negocio que resuelve y la revolución de las decisiones automatizadas.

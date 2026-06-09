@@ -27,7 +27,7 @@ Esto no significa que la intuición deba descartarse, sino que las decisiones re
 
 El DDD es el **para qué** de la Ciencia de Datos. Mientras que la Ciencia de Datos (lección [01](../intro-ciencia-datos/01-que-es-la-ciencia-de-datos.md)) proporciona los principios y métodos para extraer conocimiento de los datos, el DDD es la aplicación práctica de ese conocimiento en la toma de decisiones organizacionales.
 
-El proceso CRISP-DM (lección [03](../intro-ciencia-datos/03-el-proceso-de-ciencia-de-datos.md)) comienza con el "entendimiento del negocio", que es precisamente el puente hacia el DDD: todo análisis de datos debe responder a una necesidad de decisión.
+El proceso CRISP-DM (lección [04](../intro-ciencia-datos/04-el-proceso-de-ciencia-de-datos.md)) comienza con el "entendimiento del negocio", que es precisamente el puente hacia el DDD: todo análisis de datos debe responder a una necesidad de decisión.
 
 ## Componentes clave del DDD
 

@@ -20,7 +20,7 @@ Target analizó los históricos de compra de sus clientas para identificar patro
 - El valor está en encontrar lo inesperado.
 - Difícil de medir el ROI por anticipado.
 - Requiere curiosidad y pensamiento exploratorio.
-- Se apoya en visualización de datos (lección [06](../intro-ciencia-datos/06-visualizacion-y-comunicacion.md)) y estadística descriptiva (lección [05](../intro-ciencia-datos/05-estadistica-descriptiva-fundamental.md)).
+- Se apoya en visualización de datos (lección [07](../intro-ciencia-datos/07-visualizacion-y-comunicacion.md)) y estadística descriptiva (lección [06](../intro-ciencia-datos/06-estadistica-descriptiva-fundamental.md)).
 
 ## Tipo 2: Escala Masiva
 

@@ -68,4 +68,4 @@ El científico de datos (lección [01](../intro-ciencia-datos/01-que-es-la-cienc
 - Monitorear la calidad del modelo en producción (los modelos se degradan con el tiempo).
 - Evaluar el impacto ético y de negocio de las decisiones automatizadas.
 
-Las herramientas para implementar estos modelos en producción se cubren en la lección sobre [herramientas](../intro-ciencia-datos/07-herramientas-del-cientifico-de-datos.md).
+Las herramientas para implementar estos modelos en producción se cubren en la lección sobre [herramientas](../intro-ciencia-datos/08-herramientas-del-cientifico-de-datos.md).
