@@ -26,7 +26,17 @@ Lecciones:
 3. [La Revolución de las Decisiones Automatizadas](./data-driven-decision-making/03-la-revolucion-de-las-decisiones-automatizadas.md)
 4. [El Impacto del Big Data en la Productividad](./data-driven-decision-making/04-impacto-del-big-data-en-la-productividad.md)
 
+### [CRISP-DM](./CRISP-DM/)
+Profundización en el proceso CRISP-DM, con énfasis en la fase de Comprensión del Negocio: cómo traducir problemas de negocio en tareas de datos, diseñar escenarios de uso y aplicar el marco de Valor Esperado.
+
+Módulos:
+- [Fase 1: Comprensión del Negocio](./CRISP-DM/fase-1-comprension-del-negocio/)
+  - [El Arte de Traducir el Problema](./CRISP-DM/fase-1-comprension-del-negocio/01-el-arte-de-traducir-el-problema.md)
+  - [Diseñar el Escenario de Uso](./CRISP-DM/fase-1-comprension-del-negocio/02-disenar-el-escenario-de-uso.md)
+  - [El Valor Esperado](./CRISP-DM/fase-1-comprension-del-negocio/03-el-valor-esperado.md)
+
 ## Orden sugerido
 
 1. Completar **intro-ciencia-datos** para obtener la base conceptual.
 2. Continuar con **data-driven-decision-making** para entender cómo aplicar esos conocimientos en el contexto empresarial.
+3. Profundizar con **CRISP-DM** para dominar las fases del proceso en detalle.
