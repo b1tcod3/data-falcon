@@ -4,38 +4,35 @@ La Ciencia de Datos sigue un proceso estructurado que garantiza que los resultad
 
 ## Las seis fases de CRISP-DM
 
-```
-                  +------------------+
-                  | Entendimiento    |
-                  | del Negocio      |
-                  +--------+---------+
-                           |
-                           v
-                  +------------------+
-                  | Entendimiento    |
-                  | de los Datos     |
-                  +--------+---------+
-                           |
-                           v
-                  +------------------+
-                  | Preparación      |
-                  | de los Datos     |
-                  +--------+---------+
-                           |
-                           v
-                  +------------------+
-                  | Modelado         |
-                  +--------+---------+
-                           |
-                           v
-                  +------------------+
-                  | Evaluación       |
-                  +--------+---------+
-                           |
-                           v
-                  +------------------+
-                  | Despliegue       |
-                  +------------------+
+```mermaid
+flowchart TB
+    %% Definición de Nodos de Proceso
+    BU["Entendimiento<br>del Negocio"]
+    DU["Entendimiento<br>de los Datos"]
+    DP["Preparación<br>de los Datos"]
+    M["Modelado"]
+    E["Evaluación"]
+    D["Despliegue"]
+
+    %% Nodo Central de Almacenamiento
+    DB[("Datos")]
+
+    %% Relaciones y Flujos Técnicos
+    BU <--> DU
+    DU --> DP
+    DP <--> M
+    M --> E
+    E ---> BU
+    E --> D
+
+    %% Estilos visuales
+    style BU fill:#4a2f24,stroke:#fff,stroke-width:1px,color:#fff
+    style DU fill:#4a2f24,stroke:#fff,stroke-width:1px,color:#fff
+    style DP fill:#4a2f24,stroke:#fff,stroke-width:1px,color:#fff
+    style M fill:#4a2f24,stroke:#fff,stroke-width:1px,color:#fff
+    style E fill:#4a2f24,stroke:#fff,stroke-width:1px,color:#fff
+    style D fill:#4a2f24,stroke:#fff,stroke-width:1px,color:#fff
+    style DB fill:#d35400,stroke:#fff,stroke-width:1px,color:#fff
 ```
 
 ## Dos detalles fundamentales del diagrama
