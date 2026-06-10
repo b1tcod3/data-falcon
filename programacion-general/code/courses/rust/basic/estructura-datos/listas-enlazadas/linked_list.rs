@@ -162,6 +162,87 @@ impl LinkedList {
         None
     }
 
+    /// Inserta un nuevo valor en el índice especificado
+    ///
+    /// Si el índice es 0, inserta al inicio de la lista.
+    /// Si el índice es igual a la longitud, inserta al final.
+    /// Si el índice es mayor que la longitud, no hace nada.
+    ///
+    /// # Parámetros
+    /// * `index` - La posición donde insertar el valor (0-based)
+    /// * `value` - El valor a insertar
+    ///
+    /// # Ejemplos
+    /// ```
+    /// let mut list = LinkedList::new();
+    /// list.push_back("a");
+    /// list.push_back("c");
+    /// list.insert_at_index(1, "b");
+    /// assert_eq!(list.to_vec(), vec!["a", "b", "c"]);
+    /// ```
+    ///
+    /// # Complejidad
+    /// O(n) - requiere recorrer la lista hasta el índice de inserción
+    fn insert_at_index(&mut self, index: usize, value: &str) {
+        if index == 0 {
+            let mut new_node = Box::new(Node::new(value));
+            new_node.next = self.first_node.take();
+            self.first_node = Some(new_node);
+            return;
+        }
+
+        let mut current = &mut self.first_node;
+        let mut current_index = 0;
+
+        while let Some(node) = current {
+            if current_index == index - 1 {
+                let mut new_node = Box::new(Node::new(value));
+                new_node.next = node.next.take();
+                node.next = Some(new_node);
+                return;
+            }
+            current = &mut node.next;
+            current_index += 1;
+        }
+    }
+
+    /// Elimina el elemento en el índice especificado
+    ///
+    /// Si el índice es 0, elimina el primer nodo (O(1)).
+    /// Si el índice está fuera de los límites, no hace nada.
+    ///
+    /// # Parámetros
+    /// * `index` - La posición del elemento a eliminar (0-based)
+    ///
+    /// # Complejidad
+    /// O(n) - O(1) si se elimina el primer nodo, O(n) en otro caso
+    fn delete_at_index(&mut self, index: usize) {
+        if self.first_node.is_none() {
+            return;
+        }
+
+        if index == 0 {
+            let old_head = self.first_node.take();
+            self.first_node = old_head.unwrap().next;
+            return;
+        }
+
+        let mut current = &mut self.first_node;
+        let mut current_index = 0;
+
+        while let Some(node) = current {
+            if current_index == index - 1 {
+                let node_to_delete = node.next.take();
+                if let Some(mut target) = node_to_delete {
+                    node.next = target.next.take();
+                }
+                return;
+            }
+            current = &mut node.next;
+            current_index += 1;
+        }
+    }
+
     /// Retorna una representación como Vec de todos los elementos
     ///
     /// # Complejidad
@@ -390,6 +471,101 @@ mod tests {
     fn test_read_lista_vacia() {
         let list: LinkedList = LinkedList::new();
         assert_eq!(list.read(0), None);
+    }
+
+    #[test]
+    fn test_insert_at_index_inicio() {
+        let mut list = LinkedList::new();
+        list.push_back("b");
+        list.push_back("c");
+        list.insert_at_index(0, "a");
+        assert_eq!(list.to_vec(), vec!["a", "b", "c"]);
+    }
+
+    #[test]
+    fn test_insert_at_index_medio() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.push_back("c");
+        list.insert_at_index(1, "b");
+        assert_eq!(list.to_vec(), vec!["a", "b", "c"]);
+    }
+
+    #[test]
+    fn test_insert_at_index_final() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.push_back("b");
+        list.insert_at_index(2, "c");
+        assert_eq!(list.to_vec(), vec!["a", "b", "c"]);
+    }
+
+    #[test]
+    fn test_insert_at_index_lista_vacia() {
+        let mut list: LinkedList = LinkedList::new();
+        list.insert_at_index(0, "primero");
+        assert_eq!(list.to_vec(), vec!["primero"]);
+    }
+
+    #[test]
+    fn test_insert_at_index_fuera_de_limites() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.insert_at_index(5, "b");
+        assert_eq!(list.to_vec(), vec!["a"]);
+    }
+
+    #[test]
+    fn test_delete_at_index_inicio() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.push_back("b");
+        list.push_back("c");
+        list.delete_at_index(0);
+        assert_eq!(list.to_vec(), vec!["b", "c"]);
+    }
+
+    #[test]
+    fn test_delete_at_index_medio() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.push_back("b");
+        list.push_back("c");
+        list.delete_at_index(1);
+        assert_eq!(list.to_vec(), vec!["a", "c"]);
+    }
+
+    #[test]
+    fn test_delete_at_index_final() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.push_back("b");
+        list.push_back("c");
+        list.delete_at_index(2);
+        assert_eq!(list.to_vec(), vec!["a", "b"]);
+    }
+
+    #[test]
+    fn test_delete_at_index_unico_elemento() {
+        let mut list = LinkedList::new();
+        list.push_back("unico");
+        list.delete_at_index(0);
+        assert!(list.is_empty());
+    }
+
+    #[test]
+    fn test_delete_at_index_lista_vacia() {
+        let mut list: LinkedList = LinkedList::new();
+        list.delete_at_index(0);
+        assert!(list.is_empty());
+    }
+
+    #[test]
+    fn test_delete_at_index_fuera_de_limites() {
+        let mut list = LinkedList::new();
+        list.push_back("a");
+        list.delete_at_index(5);
+        assert_eq!(list.to_vec(), vec!["a"]);
     }
 
     #[test]

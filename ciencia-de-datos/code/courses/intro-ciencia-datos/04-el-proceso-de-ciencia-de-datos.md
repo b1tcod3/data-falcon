@@ -38,7 +38,13 @@ La Ciencia de Datos sigue un proceso estructurado que garantiza que los resultad
                   +------------------+
 ```
 
-Las flechas entre fases van en ambos sentidos: el proceso es **iterativo** y se puede retroceder a fases anteriores cuando se descubre nueva información.
+## Dos detalles fundamentales del diagrama
+
+Si observas el diagrama de CRISP-DM, notarás dos detalles fundamentales en su diseño:
+
+- **Las flechas de doble sentido:** El proceso casi nunca se mueve en línea recta. Es un constante ir y venir. Por ejemplo, cuando estás en la fase de Modelado, es completamente normal descubrir que necesitas regresar a Preparación de Datos para crear una nueva variable que olvidaste.
+
+- **El gran círculo exterior:** Representa la naturaleza iterativa del campo. Terminar un ciclo y llegar a Despliegue no significa que el trabajo terminó. El negocio cambia, los datos cambian, y el fin de un ciclo suele ser el disparador de la siguiente iteración, ahora con un equipo mucho más informado que al principio.
 
 ### 1. Entendimiento del Negocio
 
