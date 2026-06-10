@@ -19,7 +19,8 @@ flowchart TB
 
     %% Relaciones y Flujos Técnicos
     BU <--> DU
-    DU --> DP
+    DU --> DB
+    DB --> DP
     DP <--> M
     M --> E
     E ---> BU
