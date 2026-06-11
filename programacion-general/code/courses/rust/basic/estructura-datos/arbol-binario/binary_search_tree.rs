@@ -97,6 +97,50 @@ impl TreeNode {
             }
         }
     }
+
+    /// Elimina un valor del árbol recursivamente
+    ///
+    /// Toma propiedad del subárbol y retorna la versión actualizada.
+    /// Maneja tres casos: nodo hoja (sin hijos), un hijo, o dos hijos.
+    /// Para dos hijos usa el sucesor in-order (mínimo de la rama derecha).
+    ///
+    /// # Parámetros
+    /// * `node` - El subárbol a modificar (Option<Box<TreeNode>>)
+    /// * `value_to_delete` - El valor a eliminar
+    ///
+    /// # Devuelve
+    /// * `Option<Box<TreeNode>>` - el subárbol actualizado
+    ///
+    /// # Complejidad
+    /// O(log N) en promedio, O(N) en el peor caso
+    fn delete(node: Option<Box<TreeNode>>, value_to_delete: i32) -> Option<Box<TreeNode>> {
+        let mut current = node?;
+
+        if value_to_delete < current.value {
+            current.left = Self::delete(current.left, value_to_delete);
+            Some(current)
+        } else if value_to_delete > current.value {
+            current.right = Self::delete(current.right, value_to_delete);
+            Some(current)
+        } else {
+            if current.left.is_none() {
+                return current.right;
+            } else if current.right.is_none() {
+                return current.left;
+            }
+
+            let mut successor = current.right.as_ref().unwrap();
+            while let Some(left_child) = &successor.left {
+                successor = left_child;
+            }
+            let successor_value = successor.value;
+
+            current.value = successor_value;
+            current.right = Self::delete(current.right, successor_value);
+
+            Some(current)
+        }
+    }
 }
 
 /// Árbol Binario de Búsqueda
@@ -138,6 +182,13 @@ impl BinarySearchTree {
             None => self.root = Some(Box::new(TreeNode::new(value))),
             Some(node) => node.insert(value),
         }
+    }
+
+    /// Elimina un valor del árbol
+    ///
+    /// Si el valor no existe, el árbol no se modifica.
+    fn delete(&mut self, value_to_delete: i32) {
+        self.root = TreeNode::delete(self.root.take(), value_to_delete);
     }
 }
 
@@ -194,6 +245,39 @@ fn main() {
         match arbol_degenerado.search(v) {
             Some(nodo) => println!("  ✓ {} encontrado", nodo.value),
             None => println!("  ✗ {} no encontrado", v),
+        }
+    }
+
+    // Demostración de eliminación
+    println!();
+
+    let mut arbol_delete = BinarySearchTree::new();
+    for &v in &[50, 25, 75, 10, 30, 60, 80, 45] {
+        arbol_delete.insert(v);
+    }
+
+    println!("Eliminar hoja (10):");
+    arbol_delete.delete(10);
+    match arbol_delete.search(10) {
+        Some(_) => println!("  ✗ 10 todavía presente"),
+        None => println!("  ✓ 10 eliminado"),
+    }
+
+    println!("Eliminar nodo con un hijo (25 -> right=30):");
+    arbol_delete.delete(25);
+    match arbol_delete.search(25) {
+        Some(_) => println!("  ✗ 25 todavía presente"),
+        None => println!("  ✓ 25 eliminado"),
+    }
+
+    println!("Eliminar nodo con dos hijos (50):");
+    arbol_delete.delete(50);
+    match arbol_delete.search(50) {
+        Some(_) => println!("  ✗ 50 todavía presente"),
+        None => {
+            if let Some(root_val) = arbol_delete.root.as_ref().map(|n| n.value) {
+                println!("  ✓ 50 eliminado, nueva raíz: {}", root_val);
+            }
         }
     }
 }
@@ -290,5 +374,62 @@ mod tests {
         assert!(tree.search(1).is_some());
         assert!(tree.search(5).is_some());
         assert_eq!(tree.root.as_ref().unwrap().value, 1);
+    }
+
+    #[test]
+    fn test_delete_hoja() {
+        let mut tree = build_test_tree();
+        assert!(tree.search(10).is_some());
+        tree.delete(10);
+        assert!(tree.search(10).is_none());
+        assert!(tree.search(50).is_some());
+        assert!(tree.search(25).is_some());
+    }
+
+    #[test]
+    fn test_delete_nodo_con_un_hijo() {
+        let mut tree = BinarySearchTree::new();
+        for &v in &[50, 25, 75, 30] {
+            tree.insert(v);
+        }
+        assert!(tree.search(25).is_some());
+        tree.delete(25);
+        assert!(tree.search(25).is_none());
+        assert!(tree.search(30).is_some());
+    }
+
+    #[test]
+    fn test_delete_nodo_con_dos_hijos() {
+        let mut tree = build_test_tree();
+        assert!(tree.search(50).is_some());
+        tree.delete(50);
+        assert!(tree.search(50).is_none());
+        assert!(tree.search(25).is_some());
+        assert!(tree.search(75).is_some());
+        assert!(tree.search(60).is_some());
+    }
+
+    #[test]
+    fn test_delete_valor_inexistente() {
+        let mut tree = build_test_tree();
+        tree.delete(999);
+        assert!(tree.search(50).is_some());
+        assert!(tree.search(10).is_some());
+    }
+
+    #[test]
+    fn test_delete_raiz_unico_elemento() {
+        let mut tree = BinarySearchTree::new();
+        tree.insert(42);
+        tree.delete(42);
+        assert!(tree.search(42).is_none());
+        assert!(tree.root.is_none());
+    }
+
+    #[test]
+    fn test_delete_arbol_vacio() {
+        let mut tree: BinarySearchTree = BinarySearchTree::new();
+        tree.delete(42);
+        assert!(tree.root.is_none());
     }
 }

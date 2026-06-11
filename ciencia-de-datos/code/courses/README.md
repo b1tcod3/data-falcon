@@ -27,13 +27,16 @@ Lecciones:
 4. [El Impacto del Big Data en la Productividad](./data-driven-decision-making/04-impacto-del-big-data-en-la-productividad.md)
 
 ### [CRISP-DM](./CRISP-DM/)
-Profundización en el proceso CRISP-DM, con énfasis en la fase de Comprensión del Negocio: cómo traducir problemas de negocio en tareas de datos, diseñar escenarios de uso y aplicar el marco de Valor Esperado.
+Profundización en el proceso CRISP-DM por fases: traducción de problemas de negocio, evaluación de fuentes de datos y aplicación de marcos de decisión.
 
 Módulos:
 - [Fase 1: Comprensión del Negocio](./CRISP-DM/fase-1-comprension-del-negocio/)
   - [El Arte de Traducir el Problema](./CRISP-DM/fase-1-comprension-del-negocio/01-el-arte-de-traducir-el-problema.md)
   - [Diseñar el Escenario de Uso](./CRISP-DM/fase-1-comprension-del-negocio/02-disenar-el-escenario-de-uso.md)
   - [El Valor Esperado](./CRISP-DM/fase-1-comprension-del-negocio/03-el-valor-esperado.md)
+- [Fase 2: Comprensión de los Datos](./CRISP-DM/fase-2-comprension-de-los-datos/)
+  - [Los Retos de la Materia Prima](./CRISP-DM/fase-2-comprension-de-los-datos/01-los-retos-de-la-materia-prima.md)
+  - [El Peligro de las Similitudes Superficiales](./CRISP-DM/fase-2-comprension-de-los-datos/02-el-peligro-de-las-similitudes-superficiales.md)
 
 ## Orden sugerido
 
