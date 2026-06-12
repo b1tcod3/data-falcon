@@ -37,6 +37,9 @@ Módulos:
 - [Fase 2: Comprensión de los Datos](./CRISP-DM/fase-2-comprension-de-los-datos/)
   - [Los Retos de la Materia Prima](./CRISP-DM/fase-2-comprension-de-los-datos/01-los-retos-de-la-materia-prima.md)
   - [El Peligro de las Similitudes Superficiales](./CRISP-DM/fase-2-comprension-de-los-datos/02-el-peligro-de-las-similitudes-superficiales.md)
+- [Fase 3: Preparación de los Datos](./CRISP-DM/fase-3-preparacion-de-datos/)
+  - [Las Tareas de Cocina de Datos](./CRISP-DM/fase-3-preparacion-de-datos/01-las-tareas-de-cocina-de-datos.md)
+  - [El Enemigo Silencioso: Data Leakage](./CRISP-DM/fase-3-preparacion-de-datos/02-el-enemigo-silencioso-data-leakage.md)
 
 ## Orden sugerido
 
