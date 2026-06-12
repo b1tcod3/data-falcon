@@ -27,7 +27,7 @@ Lecciones:
 4. [El Impacto del Big Data en la Productividad](./data-driven-decision-making/04-impacto-del-big-data-en-la-productividad.md)
 
 ### [CRISP-DM](./CRISP-DM/)
-Profundización en el proceso CRISP-DM por fases: traducción de problemas de negocio, evaluación de fuentes de datos y aplicación de marcos de decisión.
+Profundización completa en el proceso CRISP-DM: desde la comprensión del negocio y los datos, pasando por la preparación, modelado y evaluación, hasta el despliegue y cierre del ciclo iterativo.
 
 Módulos:
 - [Fase 1: Comprensión del Negocio](./CRISP-DM/fase-1-comprension-del-negocio/)
@@ -40,6 +40,16 @@ Módulos:
 - [Fase 3: Preparación de los Datos](./CRISP-DM/fase-3-preparacion-de-datos/)
   - [Las Tareas de Cocina de Datos](./CRISP-DM/fase-3-preparacion-de-datos/01-las-tareas-de-cocina-de-datos.md)
   - [El Enemigo Silencioso: Data Leakage](./CRISP-DM/fase-3-preparacion-de-datos/02-el-enemigo-silencioso-data-leakage.md)
+- [Fase 4: Modelado](./CRISP-DM/fase-4-modelado/)
+  - [El Corazón Algorítmico](./CRISP-DM/fase-4-modelado/01-el-corazon-algoritmico.md)
+- [Fase 5: Evaluación](./CRISP-DM/fase-5-evaluacion/)
+  - [La Trampa de las Falsas Alarmas](./CRISP-DM/fase-5-evaluacion/01-la-trampa-de-las-falsas-alarmas.md)
+  - [Stakeholders, Testbeds y Monitoreo](./CRISP-DM/fase-5-evaluacion/02-stakeholders-testbeds-y-monitoreo.md)
+- [Fase 6: Despliegue](./CRISP-DM/fase-6-despliegue/)
+  - [Modalidades de Despliegue](./CRISP-DM/fase-6-despliegue/01-modalidades-de-despliegue.md)
+  - [El Riesgo de Transferir Sobre la Pared](./CRISP-DM/fase-6-despliegue/02-el-riesgo-de-transferir-sobre-la-pared.md)
+- [Cierre del Ciclo](./CRISP-DM/cierre-del-ciclo/)
+  - [El Regreso al Inicio](./CRISP-DM/cierre-del-ciclo/01-el-regreso-al-inicio.md)
 
 ## Orden sugerido
 
