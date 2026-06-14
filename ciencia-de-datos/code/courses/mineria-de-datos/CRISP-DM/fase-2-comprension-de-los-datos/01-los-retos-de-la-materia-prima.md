@@ -37,4 +37,4 @@ De hecho, este proceso 鈥攃onocido como *record linkage* o *entity resolution*鈥
 
 ## Relaci贸n con otras fases
 
-Los hallazgos de esta fase pueden obligar a regresar a la [Comprensi贸n del Negocio](../fase-1-comprension-del-negocio/01-el-arte-de-traducir-el-problema.md): si los datos necesarios no existen o son inaccesibles, puede ser necesario ajustar el objetivo o el escenario de uso. Esta retroalimentaci贸n es parte natural del [proceso iterativo de CRISP-DM](../../intro-ciencia-datos/04-el-proceso-de-ciencia-de-datos.md).
+Los hallazgos de esta fase pueden obligar a regresar a la [Comprensi贸n del Negocio](../fase-1-comprension-del-negocio/01-el-arte-de-traducir-el-problema.md): si los datos necesarios no existen o son inaccesibles, puede ser necesario ajustar el objetivo o el escenario de uso. Esta retroalimentaci贸n es parte natural del [proceso iterativo de CRISP-DM](../../../intro-ciencia-datos/02-el-proceso-de-ciencia-de-datos.md).

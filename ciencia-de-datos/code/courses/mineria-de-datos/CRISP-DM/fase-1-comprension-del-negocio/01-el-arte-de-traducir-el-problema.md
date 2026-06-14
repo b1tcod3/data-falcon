@@ -6,7 +6,7 @@ Aquí es donde la ciencia de datos se vuelve un **oficio artesanal** y la creati
 
 ## El valor de los fundamentos
 
-Tener un conocimiento sólido de las bases —como las [9 tareas canónicas](../../intro-ciencia-datos/03-tareas-canonicas-de-mineria-de-datos.md)— es lo que te permite ver soluciones novedosas donde otros solo ven métricas cayendo. Esto te ayuda a estructurar o "diseñar" el problema original dividiéndolo en subproblemas más fáciles de atacar:
+Tener un conocimiento sólido de las bases —como las [9 tareas canónicas](../../04-las-9-tareas-canonicas.md)— es lo que te permite ver soluciones novedosas donde otros solo ven métricas cayendo. Esto te ayuda a estructurar o "diseñar" el problema original dividiéndolo en subproblemas más fáciles de atacar:
 
 | Problema de negocio difuso | Subproblema de datos |
 |---------------------------|---------------------|
@@ -17,4 +17,4 @@ Tener un conocimiento sólido de las bases —como las [9 tareas canónicas](../
 
 ## No es un paso atrás, es la naturaleza del proceso
 
-El escenario de uso inicial casi siempre es una versión simplificada. A medida que el proyecto avance, será necesario regresar a esta fase y ajustar el diseño para que se adapte a la realidad del negocio. No es un paso atrás; es la naturaleza iterativa del proceso que vimos en el [diagrama de CRISP-DM](../../intro-ciencia-datos/04-el-proceso-de-ciencia-de-datos.md).
+El escenario de uso inicial casi siempre es una versión simplificada. A medida que el proyecto avance, será necesario regresar a esta fase y ajustar el diseño para que se adapte a la realidad del negocio. No es un paso atrás; es la naturaleza iterativa del proceso que vimos en el [diagrama de CRISP-DM](../../../intro-ciencia-datos/02-el-proceso-de-ciencia-de-datos.md).

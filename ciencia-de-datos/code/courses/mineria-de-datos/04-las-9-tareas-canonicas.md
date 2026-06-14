@@ -1,6 +1,6 @@
 # Las 9 Tareas Canónicas de la Minería de Datos
 
-Como vimos en la lección anterior ([Ciencia de Datos vs. Minería de Datos](./02-ciencia-de-datos-vs-mineria-de-datos.md)), la Minería de Datos es la ejecución práctica de los principios de la Ciencia de Datos. Pero, ¿qué tareas concretas puede realizar? Existen **9 tareas canónicas** que abarcan prácticamente cualquier problema de minería de datos que enfrentes.
+Como vimos en la lección anterior ([Ciencia de Datos vs. Minería de Datos](./03-ciencia-de-datos-vs-mineria.md)), la Minería de Datos es la ejecución práctica de los principios de la Ciencia de Datos. Pero, ¿qué tareas concretas puede realizar? Existen **9 tareas canónicas** que abarcan prácticamente cualquier problema de minería de datos que enfrentes.
 
 | # | Tarea | ¿Qué intenta hacer? | Ejemplo de Negocio |
 |---|-------|---------------------|--------------------|
@@ -44,4 +44,4 @@ Se enfocan en medir qué tan parecidos son los elementos entre sí.
 
 ## Relación con el proceso CRISP-DM
 
-Estas 9 tareas corresponden principalmente a la fase de **Modelado** dentro del proceso CRISP-DM que veremos en la [siguiente lección](./04-el-proceso-de-ciencia-de-datos.md). La elección de qué tarea usar depende del tipo de problema de negocio que se definió en las primeras fases del proceso.
+Estas 9 tareas corresponden principalmente a la fase de **Modelado** dentro del proceso CRISP-DM que veremos en el [módulo de CRISP-DM](./CRISP-DM/fase-4-modelado/01-el-corazon-algoritmico.md). La elección de qué tarea usar depende del tipo de problema de negocio que se definió en las primeras fases del proceso.

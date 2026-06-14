@@ -4,7 +4,7 @@ Con las últimas tres fases completamos formalmente el ciclo de vida del proceso
 
 El modelado representa el punto neurálgico donde las técnicas de minería de datos se aplican de forma directa sobre la materia prima previamente preparada. Su resultado final es la creación de un patrón o modelo matemático encargado de capturar las regularidades y comportamientos subyacentes en la información.
 
-Esta es la etapa donde se puede volcar la mayor cantidad de ciencia y tecnología disponible. Por eso resulta indispensable comprender a fondo las ideas fundamentales, algoritmos y técnicas existentes para ejecutar este oficio con precisión. Las [9 tareas canónicas](../../intro-ciencia-datos/03-tareas-canonicas-de-mineria-de-datos.md) —clasificación, regresión, clustering, entre otras— son el repertorio de herramientas del que se nutre esta fase.
+Esta es la etapa donde se puede volcar la mayor cantidad de ciencia y tecnología disponible. Por eso resulta indispensable comprender a fondo las ideas fundamentales, algoritmos y técnicas existentes para ejecutar este oficio con precisión. Las [9 tareas canónicas](../../04-las-9-tareas-canonicas.md) —clasificación, regresión, clustering, entre otras— son el repertorio de herramientas del que se nutre esta fase.
 
 La elección del algoritmo depende directamente de:
 

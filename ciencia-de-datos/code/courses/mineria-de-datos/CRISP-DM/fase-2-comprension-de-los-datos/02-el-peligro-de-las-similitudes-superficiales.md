@@ -13,7 +13,7 @@ Para demostrar cómo la comprensión de los datos puede cambiar drásticamente e
 
 ## La lección
 
-Guiarse solo por el nombre del problema ("fraude") es una similitud superficial que resulta engañosa. La comprensión de los datos exige escarbar bajo la superficie para descubrir la verdadera estructura de la información disponible y vincularla con las [tareas analíticas correctas](../../intro-ciencia-datos/03-tareas-canonicas-de-mineria-de-datos.md).
+Guiarse solo por el nombre del problema ("fraude") es una similitud superficial que resulta engañosa. La comprensión de los datos exige escarbar bajo la superficie para descubrir la verdadera estructura de la información disponible y vincularla con las [tareas analíticas correctas](../../04-las-9-tareas-canonicas.md).
 
 Es muy común que un solo problema de negocio requiera fragmentarse en varias tareas de minería de datos de diferentes tipos para luego combinar sus soluciones. Por ejemplo, en Medicare se podrían combinar:
 
