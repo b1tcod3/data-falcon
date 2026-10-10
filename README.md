@@ -90,12 +90,12 @@ data-falcon/
 - rust
 
 **estructura de datos (go)**
-- ordenamiento: bubble, selection, insertion y quick sort
-- benchmark de ordenamientos
-- cola (gestor de impresiones) y pila (linter)
-- listas enlazadas simple y doble
-- arboles binarios de busqueda
-- grafos: red social, bfs, dijkstra y mapas ordenados
+- [ordenamiento: bubble, selection, insertion y quick sort](./programacion-general/code/estructura-datos/sorts/)
+- [benchmark de ordenamientos](./programacion-general/code/estructura-datos/benchmark/)
+- [cola (gestor de impresiones)](./programacion-general/code/estructura-datos/cola/) y [pila (linter)](./programacion-general/code/estructura-datos/pila/)
+- [listas enlazadas simple](./programacion-general/code/estructura-datos/listas-enlazadas/) y [doble](./programacion-general/code/estructura-datos/doubly-linked-list/)
+- [arboles binarios de busqueda](./programacion-general/code/estructura-datos/arbol-binario/)
+- [grafos: red social, bfs, dijkstra y mapas ordenados](./programacion-general/code/estructura-datos/grafo/)
 
 **proyectos**
 - bodex (sistema de gestion de inventario)
@@ -193,10 +193,10 @@ data-falcon/
 - evaluacion de modelos
 
 **tutoriales**
-- introduccion a la ciencia de datos
-- mineria de datos (con modulo de crisp-dm)
-- data-driven decision making
-- estructura de datos y algoritmos (go)
+- [introduccion a la ciencia de datos](./ciencia-de-datos/tutorials/intro-ciencia-datos/)
+- [mineria de datos (con modulo de crisp-dm)](./ciencia-de-datos/tutorials/mineria-de-datos/)
+- [data-driven decision making](./ciencia-de-datos/tutorials/data-driven-decision-making/)
+- [estructura de datos y algoritmos (go)](./ciencia-de-datos/tutorials/estructura-de-datos/)
 
 ---
 
