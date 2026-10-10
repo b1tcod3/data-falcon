@@ -13,7 +13,7 @@ type Person struct {
 }
 ```
 
-Código: [`grafo/social-graph/main.go`](../../../programacion-general/code/estructura-datos/grafo/social-graph/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/grafo/social-graph/social_graph_test.go).
+Código: [`grafo/social-graph/main.go`](../../code/estructura-datos/grafo/social-graph/main.go) y sus [pruebas](../../code/estructura-datos/grafo/social-graph/social_graph_test.go).
 
 ## 2. Búsqueda en Amplitud (BFS)
 
@@ -41,7 +41,7 @@ func (g *SocialGraph) BfsOrder(from string) []string {
 
 En el grafo de ejemplo, el árbol de amistad es `Ana ↔ Carlos ↔ Beatriz ↔ David`, y el recorrido desde Ana es `Ana → Carlos → Beatriz → David`.
 
-Código: [`grafo/bfs-graph/main.go`](../../../programacion-general/code/estructura-datos/grafo/bfs-graph/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/grafo/bfs-graph/bfs_graph_test.go).
+Código: [`grafo/bfs-graph/main.go`](../../code/estructura-datos/grafo/bfs-graph/main.go) y sus [pruebas](../../code/estructura-datos/grafo/bfs-graph/bfs_graph_test.go).
 
 ## 3. Dijkstra: camino más barato
 
@@ -65,7 +65,7 @@ Denver  ↔ El Paso (140)
 
 La ruta más barata a El Paso es `Atlanta → Denver (160) → Chicago (40) → El Paso (80) = $280`, más barata que ir vía Boston.
 
-Código: [`grafo/dijkstra/main.go`](../../../programacion-general/code/estructura-datos/grafo/dijkstra/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/grafo/dijkstra/main_test.go).
+Código: [`grafo/dijkstra/main.go`](../../code/estructura-datos/grafo/dijkstra/main.go) y sus [pruebas](../../code/estructura-datos/grafo/dijkstra/main_test.go).
 
 ```bash
 go run ./grafo/dijkstra
@@ -87,7 +87,7 @@ func sortedKeys[V any](m map[string]V) []string {
 
 Esto replica las operaciones del `BTreeMap` de Rust: iteración alfabética, *range query* (`rangeQuery(grafo, "Atlanta", "Chicago")`) y min/max (primera/última clave).
 
-Código: [`grafo/mapas-ordenados/main.go`](../../../programacion-general/code/estructura-datos/grafo/mapas-ordenados/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/grafo/mapas-ordenados/mapas_ordenados_test.go).
+Código: [`grafo/mapas-ordenados/main.go`](../../code/estructura-datos/grafo/mapas-ordenados/main.go) y sus [pruebas](../../code/estructura-datos/grafo/mapas-ordenados/mapas_ordenados_test.go).
 
 | Estructura | Insert/Read | Orden de claves | Uso ideal |
 | --- | --- | --- | --- |

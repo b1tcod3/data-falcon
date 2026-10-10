@@ -39,8 +39,8 @@ Como con Selection Sort, se incluye la variante descendente `InsertionSortDesc`.
 
 ## Código completo
 
-- Implementación: [`sorts/insertion_sort.go`](../../../programacion-general/code/estructura-datos/sorts/insertion_sort.go)
-- Pruebas: [`sorts/sorts_test.go`](../../../programacion-general/code/estructura-datos/sorts/sorts_test.go)
+- Implementación: [`sorts/insertion_sort.go`](../../code/estructura-datos/sorts/insertion_sort.go)
+- Pruebas: [`sorts/sorts_test.go`](../../code/estructura-datos/sorts/sorts_test.go)
 
 ```bash
 cd programacion-general/code/estructura-datos

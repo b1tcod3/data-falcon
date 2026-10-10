@@ -42,8 +42,8 @@ El peor caso ocurre cuando el pivote termina siempre en un extremo. Técnicas co
 
 ## Código completo
 
-- Implementación: [`sorts/quick_sort.go`](../../../programacion-general/code/estructura-datos/sorts/quick_sort.go)
-- Pruebas: [`sorts/sorts_test.go`](../../../programacion-general/code/estructura-datos/sorts/sorts_test.go)
+- Implementación: [`sorts/quick_sort.go`](../../code/estructura-datos/sorts/quick_sort.go)
+- Pruebas: [`sorts/sorts_test.go`](../../code/estructura-datos/sorts/sorts_test.go)
 
 ```bash
 cd programacion-general/code/estructura-datos

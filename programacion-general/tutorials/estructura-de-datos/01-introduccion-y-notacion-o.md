@@ -27,7 +27,7 @@ En Rust los ejemplos del curso usaban slices (`Vec`); en Go la contraparte natur
 
 Los cuatro algoritmos de ordenamiento que veremos —Bubble Sort, Selection Sort, Insertion Sort y Quick Sort— operan **in-place** (modifican el slice original sin copias extra), exactamente como en la versión Rust.
 
-El código Go está en [`programacion-general/code/estructura-datos/sorts/`](../../../programacion-general/code/estructura-datos/sorts/). Las funciones son **genéricas** (`sorts.BubbleSort[int]`, `sorts.BubbleSort[string]`, ...), lo que equivale a los subtipos genéricos `<T: PartialOrd>` que se usaban en Rust.
+El código Go está en [`programacion-general/code/estructura-datos/sorts/`](../../code/estructura-datos/sorts/). Las funciones son **genéricas** (`sorts.BubbleSort[int]`, `sorts.BubbleSort[string]`, ...), lo que equivale a los subtipos genéricos `<T: PartialOrd>` que se usaban en Rust.
 
 ## Resumen
 

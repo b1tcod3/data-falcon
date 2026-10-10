@@ -60,24 +60,8 @@ Lecciones:
 3. [La Revolución de las Decisiones Automatizadas](./data-driven-decision-making/03-la-revolucion-de-las-decisiones-automatizadas.md)
 4. [El Impacto del Big Data en la Productividad](./data-driven-decision-making/04-impacto-del-big-data-en-la-productividad.md)
 
-### [estructura-de-datos](./estructura-de-datos/)
-Curso práctico de Estructuras de Datos y Algoritmos implementado en **Go**, basado en *A Common-Sense Guide to Data Structures and Algorithms*. Incluye algoritmos de ordenamiento con benchmark, pilas, colas, listas enlazadas, árboles binarios de búsqueda y grafos (BFS y Dijkstra), todo con pruebas unitarias.
-
-Lecciones:
-1. [Introducción y Notación O](./estructura-de-datos/01-introduccion-y-notacion-o.md)
-2. [Bubble Sort](./estructura-de-datos/02-bubble-sort.md)
-3. [Selection Sort](./estructura-de-datos/03-selection-sort.md)
-4. [Insertion Sort](./estructura-de-datos/04-insertion-sort.md)
-5. [Quick Sort](./estructura-de-datos/05-quick-sort.md)
-6. [Benchmark de Ordenamientos](./estructura-de-datos/06-benchmark-de-ordenamientos.md)
-7. [Colas y Pilas](./estructura-de-datos/07-colas-y-pilas.md)
-8. [Listas Enlazadas](./estructura-de-datos/08-listas-enlazadas.md)
-9. [Árboles Binarios de Búsqueda](./estructura-de-datos/09-arboles-binarios-de-busqueda.md)
-10. [Grafos](./estructura-de-datos/10-grafos.md)
-
 ## Orden sugerido
 
 1. Completar **intro-ciencia-datos** para obtener la base conceptual.
 2. Continuar con **mineria-de-datos** para profundizar en la disciplina y el proceso CRISP-DM.
 3. Finalizar con **data-driven-decision-making** para entender cómo aplicar todo lo anterior en el contexto empresarial.
-4. Acompañar la teoría con **estructura-de-datos** para practicar algoritmos y estructuras en Go.

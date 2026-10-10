@@ -1,6 +1,6 @@
 # Estructura de Datos y Algoritmos en Go
 
-Curso práctico de **Estructuras de Datos** implementado en **Go**, basado en el libro *A Common-Sense Guide to Data Structures and Algorithms*. Todo el código vive en [`programacion-general/code/estructura-datos/`](../../../programacion-general/code/estructura-datos/) y cada programa incluye sus propias pruebas unitarias.
+Curso práctico de **Estructuras de Datos** implementado en **Go**, basado en el libro *A Common-Sense Guide to Data Structures and Algorithms*. Todo el código vive en [`programacion-general/code/estructura-datos/`](../../code/estructura-datos/) y cada programa incluye sus propias pruebas unitarias.
 
 ## Contenido
 

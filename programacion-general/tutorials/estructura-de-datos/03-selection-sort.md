@@ -38,8 +38,8 @@ También se incluye una variante descendente (`SelectionSortDesc`) que busca el 
 
 ## Código completo
 
-- Implementación: [`sorts/selection_sort.go`](../../../programacion-general/code/estructura-datos/sorts/selection_sort.go)
-- Pruebas: [`sorts/sorts_test.go`](../../../programacion-general/code/estructura-datos/sorts/sorts_test.go)
+- Implementación: [`sorts/selection_sort.go`](../../code/estructura-datos/sorts/selection_sort.go)
+- Pruebas: [`sorts/sorts_test.go`](../../code/estructura-datos/sorts/sorts_test.go)
 
 ```bash
 cd programacion-general/code/estructura-datos

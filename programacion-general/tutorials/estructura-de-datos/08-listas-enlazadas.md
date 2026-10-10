@@ -43,7 +43,7 @@ func (l *LinkedList) IndexOf(value string) (int, bool) {
 
 El algoritmo `once upon a time` construye la frase con `PushFront` (que inserta al inicio), por lo que se agregan las palabras en orden inverso.
 
-Código: [`listas-enlazadas/main.go`](../../../programacion-general/code/estructura-datos/listas-enlazadas/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/listas-enlazadas/linked_list_test.go).
+Código: [`listas-enlazadas/main.go`](../../code/estructura-datos/listas-enlazadas/main.go) y sus [pruebas](../../code/estructura-datos/listas-enlazadas/linked_list_test.go).
 
 ```bash
 go run ./listas-enlazadas
@@ -71,7 +71,7 @@ func (q *Queue) Dequeue() (string, bool) { return q.list.RemoveFromFront() } // 
 
 En la versión Rust el ejemplo usaba `Rc<RefCell<...>>` para el nodo anterior; en Go basta el puntero nativo `*Node`, lo que simplifica bastante el código.
 
-Código: [`doubly-linked-list/main.go`](../../../programacion-general/code/estructura-datos/doubly-linked-list/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/doubly-linked-list/doubly_linked_list_test.go).
+Código: [`doubly-linked-list/main.go`](../../code/estructura-datos/doubly-linked-list/main.go) y sus [pruebas](../../code/estructura-datos/doubly-linked-list/doubly_linked_list_test.go).
 
 ```bash
 go run ./doubly-linked-list

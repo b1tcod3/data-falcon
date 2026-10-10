@@ -6,8 +6,8 @@ La forma más directa de **sentir la Notación O** es medir los algoritmos con e
 
 Go ofrece dos maneras complementarias:
 
-1. **Benchmark manual** en [`benchmark/main.go`](../../../programacion-general/code/estructura-datos/benchmark/main.go), que cronometra cada algoritmo y presenta una tabla.
-2. **Benchmarks nativos** con el paquete `testing` en [`sorts/bench_test.go`](../../../programacion-general/code/estructura-datos/sorts/bench_test.go).
+1. **Benchmark manual** en [`benchmark/main.go`](../../code/estructura-datos/benchmark/main.go), que cronometra cada algoritmo y presenta una tabla.
+2. **Benchmarks nativos** con el paquete `testing` en [`sorts/bench_test.go`](../../code/estructura-datos/sorts/bench_test.go).
 
 ```bash
 cd programacion-general/code/estructura-datos

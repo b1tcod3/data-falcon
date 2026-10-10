@@ -25,7 +25,7 @@ func (pm *PrintManager) Run() {
 }
 ```
 
-Código: [`cola/main.go`](../../../programacion-general/code/estructura-datos/cola/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/cola/print_manager_test.go).
+Código: [`cola/main.go`](../../code/estructura-datos/cola/main.go) y sus [pruebas](../../code/estructura-datos/cola/print_manager_test.go).
 
 ```bash
 go run ./cola
@@ -54,7 +54,7 @@ for _, char := range text {
 }
 ```
 
-Código: [`pila/main.go`](../../../programacion-general/code/estructura-datos/pila/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/pila/linter_test.go).
+Código: [`pila/main.go`](../../code/estructura-datos/pila/main.go) y sus [pruebas](../../code/estructura-datos/pila/linter_test.go).
 
 ```bash
 go run ./pila

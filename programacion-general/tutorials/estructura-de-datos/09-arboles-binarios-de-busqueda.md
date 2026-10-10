@@ -101,7 +101,7 @@ func (bst *BinarySearchTree) InOrder() []int {
 
 El mismo árbol funciona con cadenas en un catálogo de libros: la comparación pasa a ser alfabética.
 
-Código: [`arbol-binario/binary-search-tree/main.go`](../../../programacion-general/code/estructura-datos/arbol-binario/binary-search-tree/main.go), [`arbol-binario/bst-libros/main.go`](../../../programacion-general/code/estructura-datos/arbol-binario/bst-libros/main.go) y sus [pruebas](../../../programacion-general/code/estructura-datos/arbol-binario/binary-search-tree/main_test.go).
+Código: [`arbol-binario/binary-search-tree/main.go`](../../code/estructura-datos/arbol-binario/binary-search-tree/main.go), [`arbol-binario/bst-libros/main.go`](../../code/estructura-datos/arbol-binario/bst-libros/main.go) y sus [pruebas](../../code/estructura-datos/arbol-binario/binary-search-tree/main_test.go).
 
 ```bash
 cd programacion-general/code/estructura-datos

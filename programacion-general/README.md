@@ -51,8 +51,10 @@ data-falcon/
 │   │   └── python/
 │   └── neural-networks/     # Implementaciones de redes neuronales
 │       └── python/
-├── tutorials/               # Tutoriales para principiantes
-│   └── python/
+├── tutorials/               # Tutoriales organizados por categoría
+│   ├── estructura-de-datos/ # estructuras de datos y algoritmos (go)
+│   ├── fundamentos/         # fundamentos de programación (python)
+│   └── memoria/             # gestión de memoria (c)
 ├── courses/                 # Materiales de cursos
 │   ├── conceptos-basico/    # Conceptos básicos
 │   └── ...
