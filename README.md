@@ -46,6 +46,7 @@ data-falcon/
 └── programacion-general/
     ├── code/                # codigo fuente
     │   ├── courses/         # materiales de cursos
+    │   ├── estructura-datos/ # estructuras de datos y algoritmos (go)
     │   ├── excel/           # manejo de archivos excel
     │   ├── file-handling/   # operaciones de archivos
     │   ├── gui/             # interfaces graficas
@@ -87,6 +88,14 @@ data-falcon/
 - django
 - polars
 - rust
+
+**estructura de datos (go)**
+- ordenamiento: bubble, selection, insertion y quick sort
+- benchmark de ordenamientos
+- cola (gestor de impresiones) y pila (linter)
+- listas enlazadas simple y doble
+- arboles binarios de busqueda
+- grafos: red social, bfs, dijkstra y mapas ordenados
 
 **proyectos**
 - bodex (sistema de gestion de inventario)
@@ -182,6 +191,12 @@ data-falcon/
 - clasificacion y regresion
 - ingenieria de caracteristicas
 - evaluacion de modelos
+
+**tutoriales**
+- introduccion a la ciencia de datos
+- mineria de datos (con modulo de crisp-dm)
+- data-driven decision making
+- estructura de datos y algoritmos (go)
 
 ---
 
