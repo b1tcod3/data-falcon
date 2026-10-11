@@ -7,6 +7,10 @@ Programación** del sitio web [Bitácora de Código](https://vivebtc.win).
 Estos ejercicios están tomados de un material de clase de Programación Lineal
 (pseudocódigo en PSeInt) y fueron traducidos y resueltos en Python.
 
+Cada ejercicio se entrega en **dos versiones**: el pseudocódigo original en
+**PSeInt** (`.psc`) y su traducción a **Python** (`.py`), para comparar la
+misma lógica en los dos idiomas.
+
 ## Tutoriales relacionados
 
 - [Tutorial: complementos](https://vivebtc.win/b1s/school/complementos-fundamentos)
@@ -23,6 +27,9 @@ fundamentos/
 └── proyecto-viajes/       # práctica final Decamerón/Avianca (con tests)
 ```
 
+En cada carpeta conviven los dos formatos: `NN_nombre.psc` (PSeInt) y
+`NN_nombre.py` (Python). El proyecto de viajes incluye además `main.psc`.
+
 ## Orden de estudio
 
 1. Resuelve primero los ejercicios **secuenciales**.
@@ -31,6 +38,29 @@ fundamentos/
    lo aprendido y se entrega con pruebas unitarias.
 
 ## Cómo ejecutar
+
+### En PSeInt (`.psc`)
+
+Cada ejercicio tiene su archivo `.psc` listo para abrir en PSeInt:
+
+```bash
+pseint secuenciales/01_llamadas_telefonicas.psc
+```
+
+Para revisar la sintaxis o ejecutarlo sin entorno gráfico:
+
+```bash
+# solo revisar sintaxis (no ejecuta)
+pseint secuenciales/01_llamadas_telefonicas.psc --norun --nouser --rawerrors
+
+# ejecutar pasando las entradas por línea de comandos
+pseint secuenciales/03_baldosas_bano.psc --nouser --noinput --input=2 --input=10
+```
+
+> La instalación de PSeInt en Linux se describe en el
+> [tutorial de Complementos](https://vivebtc.win/b1s/school/complementos-fundamentos).
+
+### En Python (`.py`)
 
 Cada script es autocontenido y se ejecuta con:
 
