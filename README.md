@@ -6,7 +6,7 @@ este repositorio contiene una coleccion de codigo, tutoriales, cursos y proyecto
 
 recorrido recomendado de menor a mayor complejidad:
 
-1. **fundamentos de programacion** — [condicionales, bucles y casting (python)](./programacion-general/tutorials/fundamentos/) y [gestion de memoria (c)](./programacion-general/tutorials/memoria/)
+1. **fundamentos de programacion** — [condicionales, bucles y casting (python)](./programacion-general/tutorials/fundamentos/), [gestion de memoria (c)](./programacion-general/tutorials/memoria/) y [complementos con ejercicios resueltos y practica completa](./programacion-general/code/fundamentos/)
 2. **programacion aplicada** — [manejo de archivos](./programacion-general/code/file-handling/python/archivos/), [sql](./programacion-general/code/sql/), [excel](./programacion-general/code/excel/python/excel/) e [interfaces graficas](./programacion-general/code/gui/python/)
 3. **algoritmos y estructuras de datos** — [tutorial de estructura de datos (go)](./programacion-general/tutorials/estructura-de-datos/) y [codigo](./programacion-general/code/estructura-datos/)
 4. **analisis de datos** — [introduccion a la ciencia de datos](./ciencia-de-datos/tutorials/intro-ciencia-datos/), [manipulacion con pandas](./ciencia-de-datos/code/data-manipulation/python/pandas/), [visualizacion](./ciencia-de-datos/code/visualization/python/) y [estadistica descriptiva](./ciencia-de-datos/code/statistics/python/stat/)
@@ -24,6 +24,10 @@ recorrido recomendado de menor a mayor complejidad:
 - tipos y operaciones: [casting](./programacion-general/tutorials/fundamentos/casting.py)
 - practica: [calculadora](./programacion-general/tutorials/fundamentos/calculadora-casting.py) y [calculadora con menu](./programacion-general/tutorials/fundamentos/calculador.py)
 - memoria (c): [fuga de memoria](./programacion-general/tutorials/memoria/memoria-leak.c)
+
+**complementos de fundamentos (básico)**
+- [colección de ejercicios resueltos](./programacion-general/code/fundamentos/): [secuenciales](./programacion-general/code/fundamentos/secuenciales/) (10), [decision](./programacion-general/code/fundamentos/decision/) (9) y [seleccion multiple](./programacion-general/code/fundamentos/seleccion-multiple/) (5)
+- [proyecto de viajes decameron/avianca](./programacion-general/code/fundamentos/proyecto-viajes/) — liquidacion de viajes con [pruebas](./programacion-general/code/fundamentos/proyecto-viajes/tests/test_calculos.py)
 
 **manejo de archivos (basico)**
 - [lectura](./programacion-general/code/file-handling/python/archivos/lectura.py), [escritura](./programacion-general/code/file-handling/python/archivos/escritura.py) y [lectura completa](./programacion-general/code/file-handling/python/archivos/manejo-archivo-lectura.py) de archivos
@@ -183,6 +187,7 @@ data-falcon/
 │   │   ├── estructura-datos/  # estructuras de datos y algoritmos (go)
 │   │   ├── excel/             # excel (python)
 │   │   ├── file-handling/     # manejo de archivos (python)
+│   │   ├── fundamentos/       # complementos y practica completa de fundamentos
 │   │   ├── gui/               # interfaces graficas (python)
 │   │   ├── projects/          # proyectos completos
 │   │   └── sql/               # sql (python y postgresql)
