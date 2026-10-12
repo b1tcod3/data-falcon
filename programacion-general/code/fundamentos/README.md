@@ -2,7 +2,7 @@
 
 Colección de scripts con los ejercicios resueltos de los tutoriales
 **Complementos** y **Práctica Completa** de la categoría de **Fundamentos de
-Programación** del sitio web [Bitácora de Código](https://vivebtc.win).
+Programación y en la plataforma [B1School](https://vivebtc.win/b1s) (Bitácora de Código: https://vivebtc.win).
 
 Estos ejercicios están tomados de un material de clase de Programación Lineal
 (pseudocódigo en PSeInt) y fueron traducidos y resueltos en Python.
@@ -13,8 +13,8 @@ misma lógica en los dos idiomas.
 
 ## Tutoriales relacionados
 
-- [Tutorial: complementos](https://vivebtc.win/b1s/school/complementos-fundamentos)
-- [Tutorial: práctica completa](https://vivebtc.win/b1s/school/practica-completa-fundamentos)
+- [Tutorial: complementos](https://vivebtc.win/b1s/school/complementos-fundamentos) — disponible en [B1School](https://vivebtc.win/b1s)
+- [Tutorial: práctica completa](https://vivebtc.win/b1s/school/practica-completa-fundamentos) — disponible en [B1School](https://vivebtc.win/b1s)
 
 ## Estructura
 
